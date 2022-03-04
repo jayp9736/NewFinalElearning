@@ -45,7 +45,7 @@ const CreateQuiz = () => {
              "Questions": Test
          
       });
-      axios.post('http://localhost:4001/api/v1/CreateQuiz',Data,config) 
+      axios.post('https://finalelearning.herokuapp.com/api/v1/CreateQuiz',Data,config) 
           .then(res => {
                 console.log(res.data)
                  }

@@ -10,7 +10,7 @@ const AllQuiz = () => {
     useEffect(()=>{
       
         async function Add(){
-            await axios.get("http://localhost:4001/api/v1/AllQuiz")
+            await axios.get("https://finalelearning.herokuapp.com/api/v1/AllQuiz")
             .then(res => { setList(res.data.quiz)})
             console.log(list);
         }

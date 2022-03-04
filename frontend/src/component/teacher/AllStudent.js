@@ -11,7 +11,7 @@ const AllStudent = () => {
     const [isAuth]=useState(localStorage.getItem("IsAuth"));
     var count=1;
     useEffect(()=>{
-        axios.get('http://localhost:4001/api/v1/AllStudent')
+        axios.get('https://finalelearning.herokuapp.com/api/v1/AllStudent')
             .then(res => {setStudent(res.data.student); console.log(res.data.student)})
         
     },[])

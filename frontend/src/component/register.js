@@ -23,7 +23,7 @@ export const Register = ({history}) => {
             password: password
         });
         
-        axios.post('http://localhost:4001/api/v1/register',Data,config) 
+        axios.post('https://finalelearning.herokuapp.com/api/v1/register',Data,config) 
             .then(res => {
                         localStorage.setItem("name", res.data.user.name)
                         localStorage.setItem("email", res.data.user.email)

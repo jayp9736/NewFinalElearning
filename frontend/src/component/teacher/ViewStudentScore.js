@@ -11,7 +11,7 @@ const ViewStudentScore = () => {
     useEffect(()=>{
         var id=localStorage.getItem("quizId");
         async function Add(){
-            await axios.get(`http://localhost:4001/api/v1/StudentScore/${id}`)
+            await axios.get(`https://finalelearning.herokuapp.com/api/v1/StudentScore/${id}`)
             .then(res => {setStudent(res.data.list); console.log(res.data.list)})
         }
        

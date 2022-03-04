@@ -8,7 +8,7 @@ const StudentAllQuiz = () => {
     const [isAuth]=useState(localStorage.getItem("IsAuth"));
     var count=1;
     useEffect(()=>{
-        axios.get('http://localhost:4001/api/v1/AllQuiz')
+        axios.get('https://finalelearning.herokuapp.com/api/v1/AllQuiz')
             .then(res => {setQuiz(res.data.quiz); console.log(res.data)})
             .catch(e=> alert("Something went wrong !! Check your connection"))
         

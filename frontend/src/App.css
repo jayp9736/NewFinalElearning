@@ -1,0 +1,129 @@
+
+/* Login and register */
+.body{ font: 17px sans-serif; }
+.box-area{
+    width: 35%;
+    height: 500px;
+    background: rgba(100, 96, 96, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+
+.box-area input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: blue;
+    color: #000;
+ }
+    
+.box-area a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.box-area a:hover
+{
+    color: rgb(0, 255, 242);
+}
+
+@media screen and (max-width: 900px) {
+    .box-area{
+        width: 85%;
+        top: 45%;
+    }
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* nagivation */
+
+
+.nagivation-wrapper { 
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  min-height: 100vh;
+  margin-top: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+ 
+}
+@media screen and (max-width: 980px) {
+  .nagivation-wrapper {
+    min-height: 0vh;
+    
+  }
+}
+
+#nagivation {
+  min-width: 100%;
+  max-width: 100%;
+  background: #1b375a;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#nagivation ul.components {
+  padding: 5px 0px;
+ 
+}
+
+#nagivation ul li a {
+  
+  font-weight:700;
+  letter-spacing: 0.3px;
+  padding: 10px;
+  font-size: 1.4em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+#nagivation ul li a:hover {
+  color: #084bb1;
+  background: #fff;
+}
+
+/* Dashboard */
+
+.header{
+  padding-top:1.2rem;
+  padding-bottom:1.2rem;
+ margin-left:1%;
+ margin-right:1%;
+ background:rgba(0, 0, 0, 0.3);
+
+}
+
+.left{
+  margin-right:6rem;
+}
+
+.column{
+  padding-right:5%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #nagivation ul li a {
+    padding: 3px 20px;
+    font-size: 1.2em;
+  }
+  .header{
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+    margin-left:0%;
+    margin-right:0%;
+  
+  }
+}
+
+li{
+  list-style:none;
+}

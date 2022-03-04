@@ -12,7 +12,7 @@ export default function Login() {
 
     const submitForm = e => {
         e.preventDefault();
-        axios.post('http://localhost:4001/api/v1/login/', {email, password}) 
+        axios.post('https://finalelearning.herokuapp.com/api/v1/login/', {email, password}) 
             .then(res => {localStorage.setItem("name", res.data.user.name)
                         localStorage.setItem("email", res.data.user.email)
                         localStorage.setItem("role", res.data.user.role)

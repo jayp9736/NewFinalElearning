@@ -11,7 +11,7 @@ const GiveTest = () => {
         
         async function fetchMyAPI() {
            var id=localStorage.getItem("list");
-           await axios.get(`http://localhost:4001/api/v1/student/Quiz/${id}`)
+           await axios.get(`https://finalelearning.herokuapp.com/api/v1/student/Quiz/${id}`)
                 .then(res =>{   setTest(res.data.quiz); console.log(Test);  })
                 .catch(e=> alert("Something went wrong !! "))  
         }

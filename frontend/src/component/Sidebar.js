@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     const logoutHandler = () => {
 
-        axios.get('http://localhost:4001/api/v1/logout')
+        axios.get('https://finalelearning.herokuapp.com/api/v1/logout')
         .then(res => {
             window.localStorage.clear();
             window.location.reload(true);

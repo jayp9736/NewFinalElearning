@@ -23,13 +23,13 @@ const AllStudent = () => {
       setUpdateEmail(data.email);
     }
     function updateStudent(name, email){
-        axios.put(`http://localhost:4001/api/v1/updateStudent/${updateId}`,{name,email})
+        axios.put(`https://finalelearning.herokuapp.com/api/v1/updateStudent/${updateId}`,{name,email})
         .then(res =>{ console.log(res.data); })
         
        
     }
     function deleteStudent(id){
-        axios.delete(`http://localhost:4001/api/v1/removeStudent/${id}`)
+        axios.delete(`https://finalelearning.herokuapp.com/api/v1/removeStudent/${id}`)
          .then(res => {console.log(res.data.message);  window.location.reload(true);})
         
     }
